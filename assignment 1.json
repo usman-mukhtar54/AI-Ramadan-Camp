@@ -16,7 +16,39 @@
   "nbformat": 4,
   "cells": [
     {
-      "id": "eb5ea0ef-5854-473d-b923-10552d2d5c70",
+      "id": "52dd8a65-4a29-481a-a991-972f94fed890",
+      "cell_type": "code",
+      "source": "print(\"Twinkle, twinkle, little star, \\n\\tHow I wonder what you are! \\n\\t\\tUp above the world so high, \\n\\t\\tLike a diamond in the sky. \\nTwinkle, twinkle, little star, \\n\\tHow I wonder what you are\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are\n"
+        }
+      ],
+      "execution_count": 2
+    },
+    {
+      "id": "7cf00bd1-5891-4175-9bf8-1196cb4733ab",
+      "cell_type": "code",
+      "source": "import sys\nprint(\"Python version\")\nprint(sys.version)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Python version\n3.13.1 (main, Apr 30 2025, 11:41:46) [Clang 20.0.0git (https:/github.com/llvm/llvm-project 1d810ece2b2c8fab7772049386\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "aa2b7fe5-1911-4bf8-a221-c7823c1bec06",
       "cell_type": "code",
       "source": "import datetime\nnow = datetime.datetime.now()\nprint(\"Current date and time : \")\nprint(now.strftime(\"%Y-%m-%d %H:%M:%S\"))",
       "metadata": {
@@ -26,15 +58,15 @@
         {
           "name": "stdout",
           "output_type": "stream",
-          "text": "Current date and time : \n2026-02-26 17:02:51\n"
+          "text": "Current date and time : \n2026-03-02 11:25:49\n"
         }
       ],
-      "execution_count": 1
+      "execution_count": 4
     },
     {
-      "id": "4478c4b6-df95-4f60-903b-d58f33dec61c",
+      "id": "8814cb52-af70-4bad-aaa1-2e11165350ac",
       "cell_type": "code",
-      "source": "num1 = int(input(\"enter first answer:\"))\nnum2 = int(input(\" enter secound value:\"))\nsum_of_numbers = num1 + num2\nprint(f\"The sum of {num1} and {num2} is: {sum_of_numbers}\")",
+      "source": "from math import pi\nr = float(input(\"Input the radius of the circle : \"))\narea = pi * r**2\nprint(f\"The area of the circle with radius {r} is: {area}\")",
       "metadata": {
         "trusted": true
       },
@@ -42,60 +74,18 @@
         {
           "output_type": "stream",
           "name": "stdin",
-          "text": "enter first answer: 00\n enter secound value: 88\n"
+          "text": "Input the radius of the circle :  66\n"
         },
         {
           "name": "stdout",
           "output_type": "stream",
-          "text": "The sum of 0 and 88 is: 88\n"
+          "text": "The area of the circle with radius 66.0 is: 13684.77759903714\n"
         }
       ],
-      "execution_count": 7
+      "execution_count": 5
     },
     {
-      "id": "88f6ef84-5e32-465e-933e-f986d2c01a56",
-      "cell_type": "code",
-      "source": "Eng = int(input(\"Enter English Marks:\"))\nIsl = int(input(\"Enter Isl Marks:\"))\nMath = int(input(\"Enter Maths Marks:\"))\nUrdu = int(input(\"Enter Urdu Marks:\"))\nComp = int(input(\"Enter Comp Marks:\"))\nobtain = Eng + Isl + Math + Urdu + Comp\nprint(\"Your Obtain Marks is : \",obtain)\nperc = obtain / 500 * 100\nprint(\"Your Percentage is : \", perc)\nif perc >=80 and perc <=100:\n    print(\"A-One Grade\")\nelif perc >= 70 and perc < 80:\n    print(\"A Grade\")\nelif perc >= 60 and perc < 70:\n    print(\"B Grade\")\nelif perc >= 50 and perc < 60:\n    print(\"C Grade\")\nelif perc >= 40 and perc < 50:\n    print(\"D Grade\")\nelif perc >= 33 and perc < 40:\n    print(\"E Grade\")\nelse:\n    print(\"Fail\")",
-      "metadata": {
-        "trusted": true
-      },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdin",
-          "text": "Enter English Marks: 77\nEnter Isl Marks: 88\nEnter Maths Marks: 99\nEnter Urdu Marks: 00\nEnter Comp Marks: 99\n"
-        },
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": "Your Obtain Marks is :  363\nYour Percentage is :  72.6\nA Grade\n"
-        }
-      ],
-      "execution_count": 11
-    },
-    {
-      "id": "1e6e173d-64ee-436a-95f1-db08d149d968",
-      "cell_type": "code",
-      "source": "number = int(input(\"Enter a number: \"))\nif (number % 2) == 0:\n    print(f\"{number} is an even number\")\nelse:\n    print(f\"{number} is an odd number\")",
-      "metadata": {
-        "trusted": true
-      },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdin",
-          "text": "Enter a number:  66\n"
-        },
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": "66 is an even number\n"
-        }
-      ],
-      "execution_count": 12
-    },
-    {
-      "id": "a692f534-bd85-4789-ac6a-b335ce63d393",
+      "id": "bb0e2a28-d7b9-4751-bfd0-ef095f9e11f4",
       "cell_type": "code",
       "source": "fname = input(\"Input your First Name : \")\nlname = input(\"Input your Last Name : \")\nprint(f\"Hello {lname} {fname}\")",
       "metadata": {
@@ -113,12 +103,12 @@
           "text": "Hello mukhtar usman\n"
         }
       ],
-      "execution_count": 13
+      "execution_count": 6
     },
     {
-      "id": "24bbb79d-bdc0-46ab-97aa-b0e002a4cf2e",
+      "id": "0e1d2d00-58f0-41e3-b5a7-64fc3ec95a35",
       "cell_type": "code",
-      "source": "from math import pi\nr = int(input(\"Input the radius of the circle : \"))\narea = pi * r**2\nprint(f\"The area of the circle with radius {r} is: {area}\")",
+      "source": "num1 = float(input(\"Enter first number: \"))\nnum2 = float(input(\"Enter second number: \"))\nsum_of_numbers = num1 + num2\nprint(f\"The sum of {num1} and {num2} is: {sum_of_numbers}\")",
       "metadata": {
         "trusted": true
       },
@@ -126,52 +116,20 @@
         {
           "output_type": "stream",
           "name": "stdin",
-          "text": "Input the radius of the circle :  99\n"
+          "text": "Enter first number:  88\nEnter second number:  88\n"
         },
         {
           "name": "stdout",
           "output_type": "stream",
-          "text": "The area of the circle with radius 99 is: 30790.74959783356\n"
+          "text": "The sum of 88.0 and 88.0 is: 176.0\n"
         }
       ],
-      "execution_count": 14
+      "execution_count": 7
     },
     {
-      "id": "fe38b3c4-7592-4045-8da2-5983ef44751f",
+      "id": "9581e559-5ff6-43a0-be41-612cd374961d",
       "cell_type": "code",
-      "source": "import sys\nprint(\"Python version\")\nprint(sys.version)",
-      "metadata": {
-        "trusted": true
-      },
-      "outputs": [
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": "Python version\n3.13.1 (main, Apr 30 2025, 11:41:46) [Clang 20.0.0git (https:/github.com/llvm/llvm-project 1d810ece2b2c8fab7772049386\n"
-        }
-      ],
-      "execution_count": 15
-    },
-    {
-      "id": "1ab4801d-2d7f-496b-ab6d-3dbcfa3cc538",
-      "cell_type": "code",
-      "source": "print(\"Twinkle, twinkle, little star, \\n\\tHow I wonder what you are! \\n\\t\\tUp above the world so high, \\n\\t\\tLike a diamond in the sky. \\nTwinkle, twinkle, little star, \\n\\tHow I wonder what you are\")",
-      "metadata": {
-        "trusted": true
-      },
-      "outputs": [
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": "Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are\n"
-        }
-      ],
-      "execution_count": 17
-    },
-    {
-      "id": "e73a03da-c731-4456-a471-aec116adce29",
-      "cell_type": "code",
-      "source": "num1 = int(input(\"enter first answer:\"))\noperator = input (\"enter operator(+,-,*,/):\")\nnum2 = int(input(\" enter secound value:\"))\nif operator== '+':\n print(f\"{num1} + {num2} ={num1+num2}\")\nelif operator== '-':\n print(f\"{num1}-{num2} ={num1 - num2}\")\nelif operator== '*':\n print(f\"{num1}*{num2} = {num1 * num2}\")\nelif operator== \"/\":\n    if num2 != 0:\n       print(f\"{num1}/{num2} = {num1/num2}\")\n    else: \n       print(\"error: divisionby zero!\")\nelse:\n    print (\"invalid operator!\")",
+      "source": "number = int(input(\"Enter a number: \"))\nif (number % 2) == 0:\n    print(f\"{number} is an even number\")\nelse:\n    print(f\"{number} is an odd number\")",
       "metadata": {
         "trusted": true
       },
@@ -179,18 +137,18 @@
         {
           "output_type": "stream",
           "name": "stdin",
-          "text": "enter first answer: 66\nenter operator(+,-,*,/): +\n enter secound value: 88\n"
+          "text": "Enter a number:  88\n"
         },
         {
           "name": "stdout",
           "output_type": "stream",
-          "text": "66 + 88 =154\n"
+          "text": "88 is an even number\n"
         }
       ],
-      "execution_count": 18
+      "execution_count": 8
     },
     {
-      "id": "a827fb77-fddf-4a6c-9d86-691e2e11e276",
+      "id": "b6654726-77d3-4ce8-bd09-76e91e418f19",
       "cell_type": "code",
       "source": "",
       "metadata": {
