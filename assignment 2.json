@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "7acd6ac8-d9b4-4655-9f84-a3b2f462c838",
+      "cell_type": "code",
+      "source": "a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\nfor num in a:\n    if num < 5:\n        print(num)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "1\n1\n2\n3\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "23d03a1c-6422-4f17-a58b-23d9cf0670db",
+      "cell_type": "code",
+      "source": "my_list = [1, 2, 3, 4, 5,6,7,8,9,10,11,12,80]\nprint(len(my_list))",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "13\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "f509f642-c310-4b35-be29-1ac1d729dd8b",
+      "cell_type": "code",
+      "source": "num_list = [1, 2, 3, 4, 5]\nprint(sum(num_list))",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "15\n"
+        }
+      ],
+      "execution_count": 4
+    },
+    {
+      "id": "e4a6d5bc-fc2e-4c69-91ae-ec0c1d681f42",
+      "cell_type": "code",
+      "source": "num_list = [1, 2, 3, 4, 5]\nprint(max(num_list))",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "5\n"
+        }
+      ],
+      "execution_count": 5
+    },
+    {
+      "id": "60c9c057-b543-4e0a-a5ea-27ea5c46817c",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
